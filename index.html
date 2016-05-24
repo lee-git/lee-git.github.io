@@ -2,19 +2,25 @@
 <html>
 <!--Try and get things into percentages, rather than pixels-->
 <head>
-<title>Games to Run</title>
+<title>Games to Run</title
 </head>
 
 <body>
+	<style>
+		body {
+			background-image: url("images/BackgroundTile.png");
+			background-repeat: repeat-x;
+			}
+	</style>
+
 	<!--This div is a place holder for the logo header-->
-	<div style="height:100px; background-color:#872a26">
-		<img src="images/GamesToRun.png" />
+	<div>
+		<a href="http://gamestorun.com"> <img src="images/GamesToRun.png" /> </a>
 	</div>
 
 	<!--w3schools.com says that the align attribute isn't supported by HTML5, 
 	and to use CSS "float:center" instead-->
 	<table>
-		
 		<tr>
 			<td colspan="2">
 				<img src="images/TheFastandtheCuriousIcon.png" />
@@ -22,30 +28,24 @@
 			</td>
 			<td>
 			</td>
-			<td valign="top" rowspan="3" style="padding:15px; border:3px solid black; width:400px">
+			<td valign="top" rowspan="3" style="padding:15px; border:3px solid black; width:400px; background:white;">
 			<!--Get text away from the border, padding?-->
 				<style>
 					p{
 					font-family:LilyUPC, sans-serif;
 					font-size: 30px}
 				</style>
-				<p align="center">Welcome to GamesToRun.com!</p>
-			
-				<!--this paragraph needs some formatting-->
-				<p style="font-family:Albhabi, serif; font-size: larger">This website will feature original and innovative games for you to run with your group.  <br>Whether it be for a youth group, a family reunion, a birthday party, or whatever exciting event you're planning, we have the best games for you.</p>
-			
-				<p align="center">Thanks for stopping by.</p>
-				<!--(Please get in touch with us at "email address" to let us know how we can help you run better games.)-->
+				<iframe height=400 width=400 name=descwindow src="Welcome.html"></iframe>
 			</td>
 			
 		<tr>
 			<!--Don't want this big gap between image and words-->
 			<td style="text-align:center; width:150px;">	
-				<p> <a href="moreinfo"> <b> more info </b> </a> </p>
+				<p> <a href="TheFastandtheCurious.html" target=descwindow> <img src="images/LearnMoreButton.png"> </a> </p>
 			</td>
 			<!--need some space here-->
 			<td valign="top" style="text-align:center; width:250px">
-				 <p><a href="buyme"> <b> BUY  </b> </a> </p>
+				 <p><a href="BuyFast.html" target=descwindow> <img src="images/BuyButton.png" </a> </p>
 			</td>	
 		</tr>
 				
@@ -62,8 +62,8 @@
 	
 	<!--This div is a place holder for the footer, with a copyright at some point
 	Maybe add an e-mail for contact info for now-->
-	<div style="height:100px; background-color:#872a26">
-		<p style="color:white; text-align:right; font-family:Albhabi, serif; font-size:medium">Copyright 2016</p>
+	<div style="height:100px; background-color:#02808c">
+		<p style="color:white; padding:15px; text-align:right; font-family:Albhabi, serif; font-size:medium;">Copyright 2016</p>
 	</div>
 
 
