@@ -22,6 +22,11 @@
 	<!--w3schools.com says that the align attribute isn't supported by HTML5, 
 	and to use CSS "float:center" instead-->
 	<table>
+	<style>
+		table {
+			margin-left: 30px
+		}
+	</style>
 		<tr>
 			<td>
 				<a href="TheFastandtheCurious.html" target="descwindow"> <img src="images/TheFastandtheCuriousIcon.png" /></a>
@@ -30,13 +35,18 @@
 				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <!--spaces are not elegant formatting tools. -->
 				<a href="BuyFast.html" target="descwindow"> <img src="images/BuyButton.png" /> </a>
 			</td>	
-			<td valign="top" rowspan="3" style="border:3px solid black; width:400px; background:white;">
+			<td id="window" valign="top" rowspan="3" style="border:3px solid black; width:400px; height:450px; background:white;">
 				<style>
-					p{
-					font-family:Arial, sans-serif;
-					font-size: 30px}
+				#window{
+					position: fixed;
+				
+				}
+					iframe{
+					border: none;
+					
+					}
 				</style>
-				<iframe height="800" width="400" name="descwindow" src="Welcome.html"></iframe>
+				<iframe height="100%" width="400" name="descwindow" src="Welcome.html"></iframe>
 			</td>
 		</tr>	
 				
@@ -68,7 +78,12 @@
 	
 	<!--This div is a place holder for the footer, with a copyright at some point
 	Maybe add an e-mail for contact info for now-->
-	<div style="height:100px; background-color:#02808c">
+	<div id="footer" style="height:100px; background-color:#02808c">
+		<style>
+		#footer{
+		float: bottom;
+		}
+		</style>
 		<p style="color:white; padding:15px; text-align:right; font-family:Arial, sans-serif; font-size:medium;">Copyright 2016</p>
 	</div>
 
