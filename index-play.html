@@ -15,34 +15,48 @@
 			}
 	</style>
 
-	<div id="header">
-		<a href="http://gamestorun.com"> <img src="images/GamesToRun.png" /> </a>
+	<div>
+		<a href="http://gamestorun.com"> <img id="header" src="images/GamesToRun.png" /> </a>
 	</div>
 
 	<!--w3schools.com says that the align attribute isn't supported by HTML5, 
 	and to use CSS "float:center" instead-->
 	<table>
 	<style>
+		#header{
+			
+		}
 		table {
-			margin-left: 30px
+			margin-left: 5%
+			
 		}
 	</style>
 		<tr>
 			<td>
-				<a href="TheFastandtheCurious.html" target="descwindow"> <img src="images/TheFastandtheCuriousIcon.png" /></a>
-				<br>
-				<a href="TheFastandtheCurious.html" target="descwindow"> <img src="images/LearnMoreButton.png" /></a>
-				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <!--spaces are not elegant formatting tools. -->
-				<a href="http://gamestorun.fetchapp.com/sell/e7647e99"> <img src="images/BuyButton.png" /> </a>
-			</td>	
-			<td id="window" valign="top" rowspan="3" style="border:3px solid black; width:400px; height:450px; background:white;">
 				<style>
-				#window{
-					position: fixed;
 			
+				#buy{
+					margin-left: 20%;	
 				}
 				
-				iframe{
+				#getfree{
+					margin-left: 11%;
+				}
+				</style>
+				<a href="TheFastandtheCurious.html" target="descwindow"> <img src="images/TheFastandtheCuriousIcon.png" /></a>
+				<br>
+				<a href="TheFastandtheCurious.html" target="descwindow"> <img id="learnmore" src="images/LearnMoreButton.png" /></a>
+			<!--This iframe for the buy button doesn't have a "!" at the end like the one for Tag-->
+				<a href="BuyFast.html" target="descwindow"> <img id="buy" src="images/BuyButton.png" /> </a>
+				
+			</td>	
+			<td id="window" valign="top" rowspan="3" style="border:3px solid black; width:400px; height:66%; background:white;">
+				<style>
+				#window{
+					position: fixed;		
+				
+				}
+					iframe{
 					border: none;
 					
 					}
@@ -50,39 +64,42 @@
 				<iframe height="100%" width="400" name="descwindow" src="Welcome.html"></iframe>
 			</td>
 		</tr>	
-				
+		
+<!--module starts here for games to buy-->		
 		<tr>
 			<td>
 			<!-- Styling for links? -->
 				<a href="50WaystoPlayTag.html" target="descwindow"> <img src="images/50WaystoPlayTagIcon.png" /></a>
 				<br>
-				<a href="50WaystoPlayTag.html" target="descwindow"> <img src="images/LearnMoreButton.png" /></a>
-				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <!--spaces are not elegant formatting tools. -->
-				<a href="http://gamestorun.fetchapp.com/sell/a8e19714"> <img src="images/BuyButton.png" /> </a>
+				<a href="50WaystoPlayTag.html" target="descwindow"> <img id="learnmore" src="images/LearnMoreButton.png" /></a>
+
+				<a href="BuyTag.html" target="descwindow"> <img id="buy" src="images/BuyButton.png" /> </a>
 			</td>	
 		</tr>
+<!--module ends here for games to buy-->
 		
-		<!--module starts here-->
+<!--module starts here for free games-->
 		<tr>
 			<td>
 			<!-- Styling for links? -->
 				<a href="EmergencyGamesToolkit.html" target="descwindow"> <img src="images/EmergencyGamesToolkitIcon.png" /></a>
 				<br>
-				<a href="EmergencyGamesToolkit.html" target="descwindow"> <img src="images/LearnMoreButton.png" /></a>
-				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <!--spaces are not elegant formatting tools. -->
-				<a href="BuyToolkit.html" target="descwindow"> <img src="images/GetFreeButton.png" /> </a>
+				<a href="EmergencyGamesToolkit.html" target="descwindow"> <img id="learnmore" src="images/LearnMoreButton.png" /></a>
+				
+				<a href="BuyToolkit.html" target="descwindow"> <img id="getfree" src="images/GetFreeButton.png" /> </a>
 			</td>	
 		</tr>
-		<!--module ends here-->
+<!--module ends here for free games-->
 	
 	</table>
 	
 	<!--This div is a place holder for the footer, with a copyright at some point
 	Maybe add an e-mail for contact info for now-->
-	<div id="footer" style="height:100px; background-color:#02808c">
+	<div id="footer" style="height:100px; width:100%; background-color:#02808c">
 		<style>
 		#footer{
-		float: bottom;
+			
+			
 		}
 		</style>
 		<p style="color:white; padding:15px; text-align:right; font-family:Arial, sans-serif; font-size:medium;">Copyright 2016</p>
